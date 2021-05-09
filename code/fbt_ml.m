@@ -11,21 +11,28 @@ function [coeff, f_ml]  = fbt_ml(f, m, l)
 %  coeff: the Fourier-Bessel coeffcient of f
 %  f_ml: back-transformed m-l component of f
 
-global tht2d r2d alpha dx
+global tht2d r2d alpha delta_x r_max in2d out2d
 
 % l-th positive zero of Bessel function of order m 
 %  scaled by the invert of radius
-lambda_ml = alpha(m+1, l) / radius;
+lambda_ml = alpha(m+1, l) / r_max;
 % J_m(\lambda_{ml} r)
 bessel_core = besselj(m, lambda_ml * r2d);
 % e^{-im\theta}
 fourier_core = exp(-1j * m * tht2d);
 % The factor in front of the integration
-fac = 1 / (pi * radius^2 * (besselj(m+1, alpha(m+1, l))).^2);
-coeff = fac * dx^2 * sum(sum(f .* bessel_core .* fourier_core)
+fac = 1 / (pi * r_max^2 * (besselj(m+1, alpha(m+1, l))).^2);
+% For the integration to get the coefficients, we set the variable outside
+%  the cylinder to be zero to exclude their contributions
+f_in = f .* in2d;
+coeff = fac * delta_x^2 * sum(sum(f_in .* bessel_core .* fourier_core));
+
+% coeff is only able to reproduce the data inside the cylinder
+% f_ml outside the cylinder is considered to be not belong to any l
 if m == 0
 	f_ml = coeff * bessel_core;
 else
 	f_ml = 2 * real(coeff * conj(fourier_core) .* bessel_core);
 end
+f_ml(out2d) = 0;
 

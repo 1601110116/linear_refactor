@@ -4,13 +4,13 @@
 
 
 % Up to the order of m_max
-m_max = 10;
+m_max = 20;
 % First l_max positive zeros
-l_max = 15;
+l_max = 30;
 % The accuracy of the roots
 accuracy = 1e-5;
 % The maximum root should be less than root_max
-root_max = 100;
+root_max = 200;
 % The output file
 output = 'alpha.mat'
 
