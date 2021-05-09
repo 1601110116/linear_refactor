@@ -1,0 +1,335 @@
+
+                                                                              < M A T L A B (R) >
+                                                                    Copyright 1984-2020 The MathWorks, Inc.
+                                                                    R2020b (9.9.0.1467703) 64-bit (glnxa64)
+                                                                                August 26, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+>> >> >> >> >> >> >> >> 
+>> >> >> >> >> >> >> >> >> >> >> 
+>> >> >> >> >> >> 
+>> 
+>> 
+>> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> started from file /media/ylang/DATA/linear_200nx/linear_refactor/data/dat1500.mat
+>> 
+                                                                              < M A T L A B (R) >
+                                                                    Copyright 1984-2020 The MathWorks, Inc.
+                                                                    R2020b (9.9.0.1467703) 64-bit (glnxa64)
+                                                                                August 26, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+>> >> >> >> >> >> >> >> 
+>> >> >> >> >> >> >> >> >> >> >> 
+>> >> >> >> >> >> 
+>> 
+>> 
+>> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> started from file /media/ylang/DATA/linear_200nx/linear_refactor/data/dat1500.mat
+step 1501 of 1800
+Starting parallel pool (parpool) using the 'local' profile ...
+Connected to the parallel pool (number of workers: 6).
+step 1502 of 1800
+step 1503 of 1800
+step 1504 of 1800
+step 1505 of 1800
+step 1506 of 1800
+step 1507 of 1800
+step 1508 of 1800
+step 1509 of 1800
+step 1510 of 1800
+step 1511 of 1800
+step 1512 of 1800
+step 1513 of 1800
+step 1514 of 1800
+step 1515 of 1800
+step 1516 of 1800
+step 1517 of 1800
+step 1518 of 1800
+step 1519 of 1800
+step 1520 of 1800
+step 1521 of 1800
+step 1522 of 1800
+step 1523 of 1800
+step 1524 of 1800
+step 1525 of 1800
+step 1526 of 1800
+step 1527 of 1800
+step 1528 of 1800
+step 1529 of 1800
+step 1530 of 1800
+step 1531 of 1800
+step 1532 of 1800
+step 1533 of 1800
+step 1534 of 1800
+step 1535 of 1800
+step 1536 of 1800
+step 1537 of 1800
+step 1538 of 1800
+step 1539 of 1800
+step 1540 of 1800
+step 1541 of 1800
+step 1542 of 1800
+step 1543 of 1800
+step 1544 of 1800
+step 1545 of 1800
+step 1546 of 1800
+step 1547 of 1800
+step 1548 of 1800
+step 1549 of 1800
+step 1550 of 1800
+step 1551 of 1800
+step 1552 of 1800
+step 1553 of 1800
+step 1554 of 1800
+step 1555 of 1800
+step 1556 of 1800
+step 1557 of 1800
+step 1558 of 1800
+step 1559 of 1800
+step 1560 of 1800
+step 1561 of 1800
+step 1562 of 1800
+step 1563 of 1800
+step 1564 of 1800
+step 1565 of 1800
+step 1566 of 1800
+step 1567 of 1800
+step 1568 of 1800
+step 1569 of 1800
+step 1570 of 1800
+step 1571 of 1800
+step 1572 of 1800
+step 1573 of 1800
+step 1574 of 1800
+step 1575 of 1800
+step 1576 of 1800
+step 1577 of 1800
+step 1578 of 1800
+step 1579 of 1800
+step 1580 of 1800
+step 1581 of 1800
+step 1582 of 1800
+step 1583 of 1800
+step 1584 of 1800
+step 1585 of 1800
+step 1586 of 1800
+step 1587 of 1800
+step 1588 of 1800
+step 1589 of 1800
+step 1590 of 1800
+step 1591 of 1800
+step 1592 of 1800
+step 1593 of 1800
+step 1594 of 1800
+step 1595 of 1800
+step 1596 of 1800
+step 1597 of 1800
+step 1598 of 1800
+step 1599 of 1800
+step 1600 of 1800
+step 1601 of 1800
+step 1602 of 1800
+step 1603 of 1800
+step 1604 of 1800
+step 1605 of 1800
+step 1606 of 1800
+step 1607 of 1800
+step 1608 of 1800
+step 1609 of 1800
+step 1610 of 1800
+step 1611 of 1800
+step 1612 of 1800
+step 1613 of 1800
+step 1614 of 1800
+step 1615 of 1800
+step 1616 of 1800
+step 1617 of 1800
+step 1618 of 1800
+step 1619 of 1800
+step 1620 of 1800
+step 1621 of 1800
+step 1622 of 1800
+step 1623 of 1800
+step 1624 of 1800
+step 1625 of 1800
+step 1626 of 1800
+step 1627 of 1800
+step 1628 of 1800
+step 1629 of 1800
+step 1630 of 1800
+step 1631 of 1800
+step 1632 of 1800
+step 1633 of 1800
+step 1634 of 1800
+step 1635 of 1800
+step 1636 of 1800
+step 1637 of 1800
+step 1638 of 1800
+step 1639 of 1800
+step 1640 of 1800
+step 1641 of 1800
+step 1642 of 1800
+step 1643 of 1800
+step 1644 of 1800
+step 1645 of 1800
+step 1646 of 1800
+step 1647 of 1800
+step 1648 of 1800
+step 1649 of 1800
+step 1650 of 1800
+step 1651 of 1800
+step 1652 of 1800
+step 1653 of 1800
+step 1654 of 1800
+step 1655 of 1800
+step 1656 of 1800
+step 1657 of 1800
+step 1658 of 1800
+step 1659 of 1800
+step 1660 of 1800
+step 1661 of 1800
+step 1662 of 1800
+step 1663 of 1800
+step 1664 of 1800
+step 1665 of 1800
+step 1666 of 1800
+step 1667 of 1800
+step 1668 of 1800
+step 1669 of 1800
+step 1670 of 1800
+step 1671 of 1800
+step 1672 of 1800
+step 1673 of 1800
+step 1674 of 1800
+step 1675 of 1800
+step 1676 of 1800
+step 1677 of 1800
+step 1678 of 1800
+step 1679 of 1800
+step 1680 of 1800
+step 1681 of 1800
+step 1682 of 1800
+step 1683 of 1800
+step 1684 of 1800
+step 1685 of 1800
+step 1686 of 1800
+step 1687 of 1800
+step 1688 of 1800
+step 1689 of 1800
+step 1690 of 1800
+step 1691 of 1800
+step 1692 of 1800
+step 1693 of 1800
+step 1694 of 1800
+step 1695 of 1800
+step 1696 of 1800
+step 1697 of 1800
+step 1698 of 1800
+step 1699 of 1800
+step 1700 of 1800
+step 1701 of 1800
+step 1702 of 1800
+step 1703 of 1800
+step 1704 of 1800
+step 1705 of 1800
+step 1706 of 1800
+step 1707 of 1800
+step 1708 of 1800
+step 1709 of 1800
+step 1710 of 1800
+step 1711 of 1800
+step 1712 of 1800
+step 1713 of 1800
+step 1714 of 1800
+step 1715 of 1800
+step 1716 of 1800
+step 1717 of 1800
+step 1718 of 1800
+step 1719 of 1800
+step 1720 of 1800
+step 1721 of 1800
+step 1722 of 1800
+step 1723 of 1800
+step 1724 of 1800
+step 1725 of 1800
+step 1726 of 1800
+step 1727 of 1800
+step 1728 of 1800
+step 1729 of 1800
+step 1730 of 1800
+step 1731 of 1800
+step 1732 of 1800
+step 1733 of 1800
+step 1734 of 1800
+step 1735 of 1800
+step 1736 of 1800
+step 1737 of 1800
+step 1738 of 1800
+step 1739 of 1800
+step 1740 of 1800
+step 1741 of 1800
+step 1742 of 1800
+step 1743 of 1800
+step 1744 of 1800
+step 1745 of 1800
+step 1746 of 1800
+step 1747 of 1800
+step 1748 of 1800
+step 1749 of 1800
+step 1750 of 1800
+step 1751 of 1800
+step 1752 of 1800
+step 1753 of 1800
+step 1754 of 1800
+step 1755 of 1800
+step 1756 of 1800
+step 1757 of 1800
+step 1758 of 1800
+step 1759 of 1800
+step 1760 of 1800
+step 1761 of 1800
+step 1762 of 1800
+step 1763 of 1800
+step 1764 of 1800
+step 1765 of 1800
+step 1766 of 1800
+step 1767 of 1800
+step 1768 of 1800
+step 1769 of 1800
+step 1770 of 1800
+step 1771 of 1800
+step 1772 of 1800
+step 1773 of 1800
+step 1774 of 1800
+step 1775 of 1800
+step 1776 of 1800
+step 1777 of 1800
+step 1778 of 1800
+step 1779 of 1800
+step 1780 of 1800
+step 1781 of 1800
+step 1782 of 1800
+step 1783 of 1800
+step 1784 of 1800
+step 1785 of 1800
+step 1786 of 1800
+step 1787 of 1800
+step 1788 of 1800
+step 1789 of 1800
+step 1790 of 1800
+step 1791 of 1800
+step 1792 of 1800
+step 1793 of 1800
+step 1794 of 1800
+step 1795 of 1800
+step 1796 of 1800
+step 1797 of 1800
+step 1798 of 1800
+step 1799 of 1800
+step 1800 of 1800
+>> 
