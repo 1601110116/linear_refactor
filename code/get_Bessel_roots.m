@@ -12,13 +12,14 @@ accuracy = 1e-5;
 % The maximum root should be less than root_max
 root_max = 200;
 % The output file
-output = 'alpha.mat'
+output = 'alpha.mat';
 
 % The output, zeros of the Bessel functions
 alpha = zeros(m_max+1, l_max);
 
 x = accuracy: accuracy: root_max;
 for m = 0: m_max
+	disp(['Generating m = ', num2str(m)]);
 	y = besselj(m, x);
 	sgn = sign(y);
 	sgn_diff = sgn(1:end-1) - sgn(2:end);

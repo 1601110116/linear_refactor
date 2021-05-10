@@ -5,7 +5,7 @@ function f_filtered = filter_m(f, m, l_max)
 % Input:
 %  f: a 2D field in the original Cartesian grid
 %  m: filter f to only maintain the azimuthal mode number of m
-%  l_max: keep the Bessel series up to l_max
+%  l_max: keep the Bessel series up to and include l_max
 
 global out2d
 
