@@ -25,14 +25,15 @@ fac = 1 / (pi * r_max^2 * (besselj(m+1, alpha(m+1, l))).^2);
 % For the integration to get the coefficients, we set the variable outside
 %  the cylinder to be zero to exclude their contributions
 f_in = f .* in2d;
-coeff = fac * delta_x^2 * sum(sum(f_in .* bessel_core .* fourier_core));
+coeff = fac * delta_x^2 * sum(sum(f_in .* bessel_core .* fourier_core, 1), 2);
 
 % coeff is only able to reproduce the data inside the cylinder
 % f_ml outside the cylinder is considered to be not belong to any l
 if m == 0
-	f_ml = coeff * bessel_core;
+	f_ml = coeff .* bessel_core;
 else
-	f_ml = 2 * real(coeff * conj(fourier_core) .* bessel_core);
+	f_ml = 2 * real(coeff .* conj(fourier_core) .* bessel_core);
 end
-f_ml(out2d) = 0;
+out3d = out2d & true(size(f));
+f_ml(out3d) = 0;
 

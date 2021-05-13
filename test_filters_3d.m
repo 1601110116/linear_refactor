@@ -12,7 +12,7 @@ l_max = 30;
 m = 0;
 fig_position = [50, 50, 1600, 600];
 font_size = 8;
-filter_n1 = -1;  % the parallel harmonic to keep. Keep all if <0
+filter_n1 = 1;  % the parallel harmonic to keep. Keep all if <0
 %-----------
 
 build_grid_2d;
@@ -30,14 +30,16 @@ end
 den_n = den_n * denref;
 phi_n = phi_n * Tref;
 
-den_m = zeros(size(den));
-phi_m = zeros(size(phi));
-for iz = 2: nz+1
-	den_m(:, :, iz) = filter_m(den_n(:, :, iz), m, l_max);
-	phi_m(:, :, iz) = filter_m(phi_n(:, :, iz), m, l_max);
-end
-den_m = zbcs(den_m);
-phi_m = zbcs(phi_m);
+%den_m = zeros(size(den));
+%phi_m = zeros(size(phi));
+%for iz = 2: nz+1
+%	den_m(:, :, iz) = filter_m(den_n(:, :, iz), m, l_max);
+%	phi_m(:, :, iz) = filter_m(phi_n(:, :, iz), m, l_max);
+%end
+%den_m = zbcs(den_m);
+%phi_m = zbcs(phi_m);
+den_m = filter_m(den_n, m, l_max);
+phi_m = filter_m(phi_n, m, l_max);
 
 fig = figure();
 set(fig, 'Position', fig_position);
@@ -106,4 +108,4 @@ ylabel('x (cm)');
 title(['$$\phi_', num2str(m), '\ \mathrm{\left(V\right)}$$'], 'interpreter', 'latex');
 set(gca, 'FontSize', font_size)
 toc
-print(gcf, '-dpng', ['test_m', num2str(m), 't', sprintf('%4.4d', idiag), '.png']);
+print(gcf, '-dpng', ['3d_test_m', num2str(m), 't', sprintf('%4.4d', idiag), '.png']);
