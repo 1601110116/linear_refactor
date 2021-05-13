@@ -10,7 +10,8 @@ global xc yc zc xp yp zp rp thtp zp thtc rc zc
 [xc, yc, zc] = ndgrid(x, x, z);
 nr = nx;
 ntht = 6*nr;
-r = linspace(0, x_max, nr);
+%r = linspace(0, x_max, nr);
+r = reshape(linspace(0, x_max, nr), [], 1);
 dr = r(2)-r(1);
 tht = linspace(0, 2*pi, ntht);
 dtht = tht(2) - tht(1);
