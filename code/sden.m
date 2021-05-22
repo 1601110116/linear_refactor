@@ -17,4 +17,4 @@ end
 den(2:end-1, 2:end-1, 2:end-1) = result;
 den(den < init_uniform) = init_uniform;
 den = zbcs(den);
-
+den = lowpass_n(den);

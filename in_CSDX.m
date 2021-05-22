@@ -6,7 +6,7 @@
 clear; close all;
 
 global dt nt_per_diagnose nx nz visual Tref denref init_uniform zbc_mode B0 mu ...
-	local_nustar enable_parallel data_path diagnose_path fig_path dif_mode
+	local_nustar enable_parallel data_path diagnose_path fig_path dif_mode n_up_to
 
 % Simulate mode selection
 %  1: start from the very beginning of the simulation
@@ -141,6 +141,7 @@ min_difperp = 3e2;
 %  parallel diffusion coefficient for den, w and vi
 dif_z_in = 9.5e6;
 dif_z_out = 9.5e6;%2e4;
+n_up_to = 3;
 
 
 % Conduction

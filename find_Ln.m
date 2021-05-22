@@ -12,8 +12,8 @@ font_size = 15;
 fig_position = [50, 50, 300, 300];
 line_width = 2;
 
-Ln = 1.85;  % cm
-N0 = 20e12;  % cm^{-3}
+Ln = 3; %1.85;  % cm
+N0 = 15e12;  % cm^{-3}
 %-----------
 
 data_file = fullfile('data', ['dat', sprintf('%4.4d', idiag)]);

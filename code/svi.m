@@ -16,4 +16,4 @@ if f < 0.6
 end
 vi(2:end-1, 2:end-1, 2:end-1) = result;
 vi = zbcs(vi);
-
+vi = lowpass_n(vi);

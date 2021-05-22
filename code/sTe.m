@@ -17,4 +17,4 @@ end
 Te(2:end-1, 2:end-1, 2:end-1) = result;
 Te(Te < init_uniform) = init_uniform;
 Te = zbcs(Te);
-
+Te = lowpass_n(Te);

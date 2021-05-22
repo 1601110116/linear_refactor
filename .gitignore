@@ -6,3 +6,4 @@ diagnose/
 3D_structures/
 figs/
 further/
+*.out
