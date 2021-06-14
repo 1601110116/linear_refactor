@@ -28,4 +28,4 @@ end
 phi(outside) = 0;
 
 phi = zbcs(phi);
-
+phi = lowpass_n(phi);

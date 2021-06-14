@@ -139,9 +139,9 @@ max_difperp = 6e3;  % in cm^2/s
 min_difperp = 3e2;
 
 %  parallel diffusion coefficient for den, w and vi
-dif_z_in = 9.5e6;
-dif_z_out = 9.5e6;%2e4;
-n_up_to = 3;
+dif_z_in = 0; %9.5e6;
+dif_z_out = 0; %9.5e6;%2e4;
+n_up_to = 3;  % turn off lowpass if <0
 
 
 % Conduction

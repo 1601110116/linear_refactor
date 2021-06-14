@@ -7,3 +7,4 @@ diagnose/
 figs/
 further/
 *.out
+*.mat

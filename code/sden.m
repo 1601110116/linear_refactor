@@ -15,6 +15,6 @@ if f < 0.6
 	den_aux = den;
 end
 den(2:end-1, 2:end-1, 2:end-1) = result;
+den = lowpass_n(den);
 den(den < init_uniform) = init_uniform;
 den = zbcs(den);
-den = lowpass_n(den);

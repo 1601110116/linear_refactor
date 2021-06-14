@@ -4,7 +4,8 @@ function [coeff, f_ml]  = fbt_ml(f, m, l)
 %  all variables here are normalized
 %
 % Input:
-%  f: a 2D field in the original Cartesian grid
+%  f: a scalar field in the original Cartesian grid, 
+%     either be 2D(x-y) or 3D(x-y-z)
 %  m: azimuthal mode number
 %  l: l-th Bessel series
 % Output:

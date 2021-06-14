@@ -15,6 +15,6 @@ if f < 0.6
 	Te_aux = Te;
 end
 Te(2:end-1, 2:end-1, 2:end-1) = result;
+Te = lowpass_n(Te);
 Te(Te < init_uniform) = init_uniform;
 Te = zbcs(Te);
-Te = lowpass_n(Te);
