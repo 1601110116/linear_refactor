@@ -35,7 +35,7 @@ elseif simulate_mode == 3
 	copyfile(last_file, 'rest.mat');
 	load rest.mat
 	sdata();
-elseif simulate_mode = 4
+elseif simulate_mode == 4
 	last_file = get_last_file(fullfile('..', 'data'));
 	disp(['started from ', last_file]);
 	last_diagnose = 0;
@@ -51,6 +51,8 @@ elseif simulate_mode = 4
 	Te = filter_m(Te, 0, 30);
 	vi = filter_m(vi, 0, 30);
 	w = filter_m(w, 0, 30);
+	den(2:end-1, 2:end-1, 2:end-1) = den(2:end-1, 2:end-1, 2:end-1) + ...
+		init_perturbation * calc .* (rand(nx, nx, nz) - 0.5);
 	sphi(nx, nz);
 	sdata();
 end

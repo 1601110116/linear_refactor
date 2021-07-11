@@ -1,6 +1,5 @@
 % This script reads input parameters for simulation, 
-%  and saves parameters for further analysis.
-
+%  and saves parameters for further analysis.  
 global last_diagnose x z xX zX cs0 rhos0 t0 dx dz data_path ...
 	inv_nustar ln_lambda max_difxdt min_difxdt cm second dt
 if mod(nx, 2) ~= 0
@@ -11,7 +10,7 @@ if simulate_mode == 1
 		error('You are in a further/ directory. Simulate_mode 1 unavailable.');
 	end
 end
-if simulate_mode == 1 || simulate_mode == 3
+if simulate_mode == 1 || simulate_mode == 3 || simulate_mode == 4
 	last_diagnose = 0;
 	if ~exist('further', 'dir')
 		mkdir('further');
@@ -92,6 +91,9 @@ if simulate_mode == 1 || simulate_mode == 3
 	min_difxdt = min_difperp * dt / dx^2;
 
 	save parameters.mat
+	if simulate_mode == 4
+		build_grid_2d;
+	end
 
 elseif simulate_mode == 2
 	tmp1 = ndiagnose;
