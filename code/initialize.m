@@ -35,6 +35,24 @@ elseif simulate_mode == 3
 	copyfile(last_file, 'rest.mat');
 	load rest.mat
 	sdata();
+elseif simulate_mode = 4
+	last_file = get_last_file(fullfile('..', 'data'));
+	disp(['started from ', last_file]);
+	last_diagnose = 0;
+	% copy the last data file in the previous directory to current
+	% directory as rest.mat and then load it
+	copyfile(last_file, 'rest.mat');
+	load rest.mat
+	den = filter_z(den, 0);
+	Te = filter_z(Te, 0);
+	vi = filter_z(vi, 0);
+	w = filter_z(w, 0);
+	den = filter_m(den, 0, 30);
+	Te = filter_m(Te, 0, 30);
+	vi = filter_m(vi, 0, 30);
+	w = filter_m(w, 0, 30);
+	sphi(nx, nz);
+	sdata();
 end
 den_aux = den;  Te_aux = Te;
 vi_aux = vi;      w_aux = w;

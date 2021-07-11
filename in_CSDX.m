@@ -14,6 +14,7 @@ global dt nt_per_diagnose nx nz visual Tref denref init_uniform zbc_mode B0 mu .
 %     changed except ndiagnose and visual
 %  3: continue from the last .mat file in ../  . Used to simulate in 
 %     different parameters
+%  4: same to 3, but only maintain m=0 and n=0 components
 simulate_mode = 1;
 
 % Automatic path management
@@ -27,7 +28,7 @@ elseif simulate_mode == 2
 		error('No parameters.mat file found. Simulate_mode 2 unavailable.');
 	end
 	load('parameters.mat', 'code_path', 'data_path');
-elseif simulate_mode == 3
+elseif simulate_mode == 3 || simulate_mode == 4
 	if ~exist('../parameters.mat', 'file')
 		error('No parameters.mat file found in ../  ,Simulate_mode 3 unavailable');
 	end
